@@ -2,6 +2,7 @@
 
 sudo pacman -Syu
 sudo pacman -S --noconfirm chromium
+sudo pacman -S --noconfirm git
 sudo pacman -S --noconfirm virtualbox
 sudo pacman -S --noconfirm virtualbox-host-dkms
 sudo pacman -S --noconfirm gnome-terminal
