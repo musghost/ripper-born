@@ -22,6 +22,7 @@
 
 #git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
+echo -e "\n \e[92m Remove Pre settings\e[0m"
 [ -e ~/.zshrc ] && rm ~/.zshrc
 [ -e ~/.vimrc.local ] && rm ~/.vimrc.local
 [ -e ~/.vimrc ] && rm ~/.vimrc
