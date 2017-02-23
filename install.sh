@@ -1,7 +1,9 @@
 #!/bin/bash
 
-sudo pacman -Syu
+yes|pacaur -Syu
 
+sudo pacman -S --noconfirm chromium
+sudo pacman -S --noconfirm opera
 sudo pacman -S --noconfirm git
 sudo pacman -S --noconfirm virtualbox
 sudo pacman -S --noconfirm virtualbox-host-dkms
