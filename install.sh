@@ -138,4 +138,4 @@ if [ -f ~/.zshrc ]; then
     mkdir ~/myexternalrepos
     mkdir ~/mystageprojects
     
-    rebooot
+    reboot
