@@ -8,6 +8,8 @@ sudo pacman -S --noconfirm gnome-terminal
 sudo pacman -S --noconfirm vagrant
 sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm zsh
+sudo pacman -S --noconfirm nitrogen
+sudo pacman -S --noconfirm compton
 sudo pacman -S --noconfirm docker
 sudo gpasswd -a $USER docker
 sudo systemctl start docker
@@ -135,3 +137,5 @@ if [ -f ~/.zshrc ]; then
     mkdir ~/mysoftware
     mkdir ~/myexternalrepos
     mkdir ~/mystageprojects
+    
+    rebooot
