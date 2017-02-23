@@ -120,3 +120,5 @@ if [ -f ~/.zshrc ]; then
         ln -sf $HOME/.ripper/includes/.vimrc.local $HOME/
     fi
     echo -e "\n \e[95m Please windows + R for reload i3 config\e[0m"
+    
+    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
