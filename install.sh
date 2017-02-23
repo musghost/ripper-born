@@ -1,26 +1,22 @@
 #!/bin/bash
 
-#sudo pacman -Syu
+sudo pacman -Syu
+sudo pacman -S --noconfirm chromium
+sudo pacman -S --noconfirm virtualbox
+sudo pacman -S --noconfirm virtualbox-host-dkms
+sudo pacman -S --noconfirm gnome-terminal
+sudo pacman -S --noconfirm vagrant
+sudo pacman -S --noconfirm tmux
+sudo pacman -S --noconfirm zsh
+sudo pacman -S --noconfirm docker
+sudo gpasswd -a $USER docker
+sudo systemctl start docker
+sudo pacman -S --noconfirm rofi
+yaourt -S --noconfirm spotify
+yaourt -S --noconfirm gpmdp
 
-#sudo pacman -S --noconfirm chromium
-#sudo pacman -S --noconfirm virtualbox
-#sudo pacman -S --noconfirm gnome-terminal
-#sudo pacman -S --noconfirm vagrant
-#sudo pacman -S --noconfirm tmux
-#sudo pacman -S --noconfirm zsh
-#sudo pacman -S --noconfirm docker
-#sudo gpasswd -a $USER docker
-#sudo systemctl start docker
-#sudo pacman -S --noconfirm rofi
-#yaourt -S --noconfirm spotify
-#yaourt -S --noconfirm gpmdp
 
-#gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-#\curl -sSL https://get.rvm.io | bash -s stable
-
-#curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-
-#git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
+git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
 pip install --user git+git://github.com/Lokaltog/powerline
 mkdir -p ~/.fonts/
@@ -120,13 +116,16 @@ if [ -f ~/.zshrc ]; then
         ln -sf $HOME/.ripper/includes/.vimrc.local $HOME/
     fi
     echo -e "\n \e[95m Please windows + R for reload i3 config\e[0m"
+
+    gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    \curl -sSL https://get.rvm.io | bash -s stable
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+    pyenv install 2.7
+    pyenv global 2.7
     
-    #git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-    #pyenv install 2.7
-    #pyenv global 2.7
-    
-    #pip install fabric
-    #pip install vo-fabutils
+    pip install fabric
+    pip install vo-fabutils
     
     curl http://j.mp/spf13-vim3 -L -o - | sh
     
