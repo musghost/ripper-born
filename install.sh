@@ -29,6 +29,10 @@ echo -e "\n \e[92m Remove Pre settings\e[0m"
 [ -e ~/.gitconfig ] && rm ~/.gitconfig
 [ -e ~/.i3 ] && rm ~/.i3
 
+if [ -d ~/.oh-my-zsh ]; then
+        rm -r ~/.oh-my-zsh
+fi
+
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
