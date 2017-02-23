@@ -17,7 +17,6 @@ sudo systemctl start docker
 sudo pacman -S --noconfirm rofi
 yaourt -S --noconfirm spotify
 yaourt -S --noconfirm gpmdp
-sudo pacman -S --noconfirm chromium
 
 git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
