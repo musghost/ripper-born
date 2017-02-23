@@ -22,6 +22,13 @@
 
 #git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
+pip install --user git+git://github.com/Lokaltog/powerline
+mkdir -p ~/.fonts/
+mkdir -p ~/.config/fontconfig/conf.d/
+wget -O ~/.fonts/PowerlineSymbols.otf https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+wget -O ~/.config/fontconfig/conf.d/10-powerline-symbols.conf https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+fc-cache -vf ~/.fonts
+
 echo -e "\n \e[92m Remove Pre settings\e[0m"
 [ -e ~/.zshrc ] && rm ~/.zshrc
 [ -e ~/.vimrc.local ] && rm ~/.vimrc.local
