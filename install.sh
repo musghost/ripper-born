@@ -127,3 +127,10 @@ if [ -f ~/.zshrc ]; then
     
     pip install fabric
     pip install vo-fabutils
+    
+    mkdir ~/mywork
+    mkdir ~/myinbox
+    mkdir ~/myrefereences
+    mkdir ~/mysoftware
+    mkdir ~/myexternalrepos
+    mkdir ~/mystageprojects
