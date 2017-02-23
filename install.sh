@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -Syu
-sudo pacman -S --noconfirm chromium
+
 sudo pacman -S --noconfirm git
 sudo pacman -S --noconfirm virtualbox
 sudo pacman -S --noconfirm virtualbox-host-dkms
@@ -17,7 +17,7 @@ sudo systemctl start docker
 sudo pacman -S --noconfirm rofi
 yaourt -S --noconfirm spotify
 yaourt -S --noconfirm gpmdp
-
+sudo pacman -S --noconfirm chromium
 
 git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
