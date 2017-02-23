@@ -121,12 +121,12 @@ if [ -f ~/.zshrc ]; then
     fi
     echo -e "\n \e[95m Please windows + R for reload i3 config\e[0m"
     
-    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-    pyenv install 2.7
-    pyenv global 2.7
+    #git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+    #pyenv install 2.7
+    #pyenv global 2.7
     
-    pip install fabric
-    pip install vo-fabutils
+    #pip install fabric
+    #pip install vo-fabutils
     
     mkdir ~/mywork
     mkdir ~/myinbox
