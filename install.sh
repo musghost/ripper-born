@@ -14,3 +14,8 @@ sudo systemctl start docker
 sudo pacman -S --noconfirm rofi
 yaourt -S --noconfirm spotify
 yaourt -S --noconfirm gpmdp
+
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+\curl -sSL https://get.rvm.io | bash -s stable
+
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
