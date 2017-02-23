@@ -22,4 +22,11 @@
 
 #git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
+[ -e ~/.zshrc ] && rm ~/.zshrc
+[ -e ~/.vimrc.local ] && rm ~/.vimrc.local
+[ -e ~/.vimrc ] && rm ~/.vimrc
+[ -e ~/.gitconfig ] && rm ~/.gitconfig
+[ -e ~/.i3 ] && rm ~/.i3
+
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
