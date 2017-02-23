@@ -137,5 +137,3 @@ if [ -f ~/.zshrc ]; then
     mkdir ~/mysoftware
     mkdir ~/myexternalrepos
     mkdir ~/mystageprojects
-    
-    reboot
