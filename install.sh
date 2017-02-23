@@ -22,6 +22,8 @@ sudo pacman -Syu
 
 #git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
     if [ -f ~/.zshrc ]; then
         echo -e "\n \e[92m Set the zsh options ..\e[0m"
         rm ~/.zshrc
