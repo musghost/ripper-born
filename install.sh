@@ -1,7 +1,8 @@
 #!/bin/bash
 
-yes|pacaur -Syu
-
+yaourt -S --noconfirm i3-gaps-git
+sudo pacman -S --noconfirm dmenu
+sudo pacman -S --noconfirm i3status
 sudo pacman -S --noconfirm chromium
 sudo pacman -S --noconfirm opera
 sudo pacman -S --noconfirm git
@@ -20,6 +21,7 @@ sudo systemctl start docker
 sudo pacman -S --noconfirm rofi
 yaourt -S --noconfirm spotify
 yaourt -S --noconfirm gpmdp
+yaourt -S --noconfirm franz-bin
 
 git clone https://github.com/ricardo-pcan/ripper.git ~/.ripper
 
@@ -140,3 +142,6 @@ if [ -f ~/.zshrc ]; then
     mkdir ~/mysoftware
     mkdir ~/myexternalrepos
     mkdir ~/mystageprojects
+    mkdir ~/mypictures
+    
+    reboot
